@@ -1,31 +1,50 @@
+/* 1. Reset: Quita espacios que el navegador pone por error */
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     background-color: #121212;
-
 }
 
-
-
+/* 2. Estilo del Header (El que ya tenías) */
 .simple-header {
-    background-color: #1f1f1f;
-    height: 100px;
+    background-color: #1a1a1a;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #3d3d3d;
+    border-bottom: 2px solid #333;
 }
-
-
 
 .simple-header h1 {
-    color: #ffffff;
+    color: white;
     margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 3px;
 }
 
-.simple-header h1 span {
-    color: #ff4b2b; 
+.simple-header span {
+    color: #00d4ff; /* Color azul neón */
+}
+
+.hero {
+    /* Mantenemos el degradado negro (rgba) y luego ponemos TU imagen */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('../img/Unknown.avif'); /* <--- AQUÍ CAMBIAS EL NOMBRE */
+    
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* 4. El Botón */
+.btn {
+    background-color: #00d4ff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
 }
