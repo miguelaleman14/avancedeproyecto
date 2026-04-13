@@ -1,11 +1,11 @@
-/* 1. Reset: Quita espacios que el navegador pone por error */
+
 body {
     margin: 0;
     font-family: sans-serif;
     background-color: #121212;
 }
 
-/* 2. Estilo del Header (El que ya tenías) */
+
 .simple-header {
     background-color: #1a1a1a;
     height: 80px;
@@ -21,13 +21,13 @@ body {
 }
 
 .simple-header span {
-    color: #00d4ff; /* Color azul neón */
+    color: #00d4ff; 
 }
 
 .hero {
-    /* Mantenemos el degradado negro (rgba) y luego ponemos TU imagen */
+    
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('../img/Unknown.avif'); /* <--- AQUÍ CAMBIAS EL NOMBRE */
+                url('../img/Unknown.avif'); 
     
     background-size: cover;
     background-position: center;
@@ -39,7 +39,6 @@ body {
     color: white;
 }
 
-/* 4. El Botón */
 .btn {
     background-color: #00d4ff;
     border: none;
@@ -47,4 +46,61 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
+}
+
+
+/* --- SECCIÓN SERVICIOS --- */
+.services {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    color: #00d4ff;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Esto lo hace responsivo automáticamente */
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #252525;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px; /* Tamaño fijo para que parezcan tarjetas */
+    border: 1px solid #333;
+}
+
+/* --- SECCIÓN CONTACTO --- */
+.contact {
+    padding: 60px 20px;
+    background-color: #121212;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #333;
+}
+
+.contact h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #0a0a0a;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
 }
